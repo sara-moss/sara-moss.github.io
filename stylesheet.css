@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
+
+h1{
+    color: white;
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    background-color: #0d9587;
+    text-align: center;
+}
+
+h2{
+    color: #0d9587;
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+h3{
+    color: #0d1b95;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+p, ul, nav, table{
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:200px;
+    background-color: #0d1b95;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+
+.navigation a:hover{
+    background-color: white;
+    color: #0d1b95
+}
+
+.active a{
+    background-color: #0d9587;
+    color: white;
+}
+
+.active a:hover{
+    background-color: #0d9587;
+    color: white;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.basics h2{
+    text-align:center;
+}
+
+.tech-tools li{
+    list-style-type: none;
+}
+
+.tech-tools{
+    text-align: center;
+}
+
+.resources thead{
+    margin: 0;
+    padding: 0;
+    Color: white;
+    background-color: #0d1b95;
+    width: 100%;
+}
+
+.resources{
+    text-align: center;
+}
+
+.resources tbody{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#bitmoji{
+    border-radius:8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%
+}
+
+#headshot{
+    border-radius:8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:15%;
+    height: auto;
+}
+
