@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
+
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 80px;
+    font-family: 'Amatic SC', cursive;
+    background-color: #0d9587;
+    text-align: center;
+}
+
+nav{
+    background-color: white;
+}
+
+.nav-item{
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 5px;
+}
+
+
+.nav-link{
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: white;
+}
+
+body{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
