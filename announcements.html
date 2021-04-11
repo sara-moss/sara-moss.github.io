@@ -9,8 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="stylesheet2.css">
-        <script language="JavaScript" src="js/javascript.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
        
 </head>
 
@@ -36,6 +35,9 @@
             <li class="nav-item pill">
                 <a class="nav-link active" href="announcements.html">Announcements</a>
             </li>
+            <li class="nav-item pill">
+                <a class="nav-link" href="dictionary.html">Dictionary</a>
+            </li>
         </ul>
     </nav>
 
@@ -49,46 +51,14 @@
     <button onclick="myFunction1()" style="background-color: white; border-radius: 8px;" id="students">Student</button>
     <button onclick="myFunction2()" style="background-color: white; border-radius: 8px;" id="learningcoaches">Learning Coach</button>
     
-    <script>
-    function myFunction1() {
-      alert("Welcome, Students!");
-    }
-    </script>
- 
-    <script>
-            function myFunction2() {
-              alert("Welcome, Learning Coaches!");
-            }
-    </script>
+
 </div>
 
 <br>
 <br>
 <br>
 
-
-<script>
-    $(document).ready(function() {
-            $("#students").click(function () {
-                $("#toggler1").show();
-            });
-        });
-    
-    $(document).ready(function() {
-        $("#students").click(function() {
-            $("#toggler2").show();
-            });
-        });
-    
-        $(document).ready(function() {
-            $("#students").click(function() {
-                $("#toggler3").show();
-                });
-            });
-    </script>
-
-
-<section class="row" style="text-align:center;">
+<section class="row students" style="text-align:center;">
 <div class="col">
     <button id="toggler1" style="background-color: white; border-radius: 8px; display:none;">March 29 - April 2nd</button>
         <p id="march29s" style="display:none">
@@ -109,56 +79,10 @@
         <strong>Mrs. Moss will be out this week!</strong> I will miss you! We will still have science and art on Friday. 
     </p>
 </div>
-
-
-<script>
-    $(document).ready(function() {
-            $("#toggler1").click(function () {
-                $("#march29s").toggle();
-            });
-        });
-    
-    $(document).ready(function() {
-        $("#toggler2").click(function() {
-            $("#april5s").toggle();
-            });
-        });
-    
-        $(document).ready(function() {
-            $("#toggler3").click(function() {
-                $("#april12s").toggle();
-                });
-            });
-    </script>
-
 </section>
 
-<br>
-<br>
-<br>
 
-<script>
-    $(document).ready(function() {
-            $("#learningcoaches").click(function () {
-                $("#toggler4").show();
-            });
-        });
-    
-    $(document).ready(function() {
-        $("#learningcoaches").click(function() {
-            $("#toggler5").show();
-            });
-        });
-    
-        $(document).ready(function() {
-            $("#learningcoaches").click(function() {
-                $("#toggler6").show();
-                });
-            });
-    </script>
-
-
-<section class="row" style="text-align:center;">
+<section class="row learningcoaches" style="text-align:center;">
 <div class="col">
     <button id="toggler4" style="background-color: white; border-radius: 8px; display:none;">March 29 - April 2nd</button>
         <p id="march29lc" style="display:none">
@@ -181,7 +105,95 @@
 </div>
 
 
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
+
+$(document).ready(function() {
+            $("#students").click(function () {
+                $(".students").show();
+            });
+        });
+
+
+$(document).ready(function() {
+            $("#students").click(function () {
+                $(".learningcoaches").hide();
+            });
+        });
+
+ $(document).ready(function() {
+            $("#learningcoaches").click(function () {
+                $(".students").hide();
+            });
+        });
+
+$(document).ready(function() {
+            $("#learningcoaches").click(function () {
+                $(".learningcoaches").show();
+            });
+        });
+
+    $(document).ready(function() {
+            $("#students").click(function () {
+                $("#toggler1").show();
+            });
+        });
+    
+    $(document).ready(function() {
+        $("#students").click(function() {
+            $("#toggler2").show();
+            });
+        });
+    
+        $(document).ready(function() {
+            $("#students").click(function() {
+                $("#toggler3").show();
+                });
+            });
+
+    $(document).ready(function() {
+            $("#toggler1").click(function () {
+                $("#march29s").toggle();
+            });
+        });
+    
+    $(document).ready(function() {
+        $("#toggler2").click(function() {
+            $("#april5s").toggle();
+            });
+        });
+    
+    $(document).ready(function() {
+        $("#toggler3").click(function() {
+            $("#april12s").toggle();
+            });
+        });
+
+
+
+    $(document).ready(function() {
+            $("#learningcoaches").click(function () {
+                $("#toggler4").show();
+            });
+        });
+    
+    $(document).ready(function() {
+        $("#learningcoaches").click(function() {
+            $("#toggler5").show();
+            });
+        });
+    
+        $(document).ready(function() {
+            $("#learningcoaches").click(function() {
+                $("#toggler6").show();
+                });
+            });
+
     $(document).ready(function() {
             $("#toggler4").click(function () {
                 $("#march29lc").toggle();
@@ -199,15 +211,7 @@
                 $("#april12lc").toggle();
                 });
             });
-    </script>
-
-</section>
-
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+</script>
 
 </body>
 </html> 
