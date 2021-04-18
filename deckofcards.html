@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <Title>Number of the Day - Mrs. Moss' Website</Title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet2.css">   
+</head>
+        
+<body>
+
+    <nav>
+        <ul class="nav nav-pills">
+             <li class="nav-item pill">
+                 <a class="nav-link" href="index.html">Home</a>
+            </li> 
+             <li class="nav-item pill">
+                 <a class="nav-link" href="kindergarten.html">Kindergartners</a>
+            </li>
+             <li class="nav-item pill">
+                 <a class="nav-link" href="firstgrade.html">First Graders</a>
+            </li>
+             <li class="nav-item pill">
+                 <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+             <li class="nav-item pill">
+                 <a class="nav-link " href="bio.html">About Mrs. Moss</a>
+            </li>
+            <li class="nav-item pill">
+                <a class="nav-link" href="announcements.html">Announcements</a>
+            </li>
+            <li class="nav-item pill">
+                <a class="nav-link" href="dictionary.html">Dictionary</a>
+            </li>
+            <li class="nav-item pill">
+                <a class="nav-link active" href="deckofcards.html">Deck of Cards</a>
+            </li>
+            <li class="nav-item pill">
+                <a class="nav-link" href="contactme.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>
+        Deck of Cards
+    </h1>
+
+<form>
+    <div class="form-group">
+        <label for="number">Number of Cards</label>
+        <input type="number" class="form-control" id="number" >
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary">Draw Cards</button>
+</form>
+
+<div id="deck">
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $("form").submit(function(){
+        event.preventDefault();
+        $("#deck").text("");
+        var cards = $.get("https://deckofcardsapi.com/api/deck/new/draw/", {'count': $("#number").val()});
+
+        cards.done(function(response){
+            for (var i=0; i<response.cards.length; i++){
+                var image = response.cards[i].image;
+                var alt = response.cards[i].value+" of "+response.cards[i].suit;
+                $("#deck").append('<image src="'+image+'" alt="'+alt+'"><br/>');
+                }
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
