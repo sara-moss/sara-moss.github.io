@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
 
 
+
 h1{
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -46,6 +47,11 @@ body{
     font-size: 20px;
 }
 
+section{
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
 :any-link{
     color:#0000FF;
 }
@@ -75,6 +81,33 @@ body{
     font: white;
 }
 
+.btn {
+    background-color: navy !important;
+    color: white !important;
+}
+
+
+.btn-secondary{
+    background-color: #0d9587 !important;
+    color: white !important;
+    border: 2px solid #0d9587 !important;
+    border-radius: 8px !important;
+}
+
+.btn-secondary:hover{
+    background-color: white !important;
+    color: #0d9587 !important;
+    border: 2px solid #0d9587 !important;
+    border-radius: 8px !important;
+}
+
+.btn:hover{
+    background-color: white !important;
+    color: navy !important;
+    border: 2px solid navy !important;
+    border-radius: 8px !important;
+}
+
 @media screen and (orientation: landscape){
     .announcements{
         float: right;
@@ -87,13 +120,21 @@ body{
     }
 }
 
-ul#cards {
-    padding: 0;
+
+
+  .footer {
+    position: fixed;
+    border: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0d9587;
+    color: white;
+    text-align: center;
   }
-  
-  li {
-    display: inline;
-    list-style: none;
-    padding: 0;
-    margin-right: 20px;
-  }
+
+.img-btn{
+    border: 2px solid #0d9587;
+    border-radius: 8px;
+}
+

@@ -1,92 +1,234 @@
+
 <!DOCTYPE html>
-
 <html>
-
+    
 <head>
-    <Title>Resources - Mrs. Moss' Website</Title>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet2.css">   
-</head>
+        <Title>Resources - Mrs. Moss' Website</Title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://i.ibb.co/PrfRqzc/Uplift-MICHIGAN-LOGO-900x900-round-white-BKG-Copy.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet2.css">
         
+       
+</head>
+
 <body>
-            
+    
     <nav>
         <ul class="nav nav-pills">
-             <li class="nav-item pill">
-                 <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item pill">
+                <a class="nav-link" href="index.html">Home</a>
             </li> 
-             <li class="nav-item pill">
-                 <a class="nav-link" href="kindergarten.html">Kindergartners</a>
-            </li>
-             <li class="nav-item pill">
-                 <a class="nav-link" href="firstgrade.html">First Graders</a>
-            </li>
-             <li class="nav-item pill">
-                 <a class="nav-link active" href="resources.html">Resources</a>
-            </li>
-             <li class="nav-item pill">
-                 <a class="nav-link " href="bio.html">About Mrs. Moss</a>
+            <li class="nav-item pill">
+                <a class="nav-link" href="kindergarten.html">Kindergartners</a>
             </li>
             <li class="nav-item pill">
-                <a class="nav-link" href="announcements.html">Announcements</a>
+                <a class="nav-link" href="firstgrade.html">First Graders</a>
             </li>
             <li class="nav-item pill">
-                <a class="nav-link" href="dictionary.html">Dictionary</a>
+                <a class="nav-link active" href="resources.html">Resources</a>
             </li>
             <li class="nav-item pill">
-                <a class="nav-link" href="deckofcards.html">Deck of Cards</a>
-            </li>
-            <li class="nav-item pill">
-                <a class="nav-link" href="contactme.html">Contact Me</a>
+                <a class="nav-link " href="bio.html">About Mrs. Moss</a>
             </li>
         </ul>
     </nav>
 
-<h1>
-    Resources
-</h1>
+    <h1>
+        Resources
+    </h1>
 
-<div class="card-deck">
+    <section>
 
-    <div class="card" style="text-align:center; border-color: white;">
-        <div class="card-body">
-           <h2 class="card-header bg-secondary text-white"><strong>Students</strong></h2>
-            <p class="card-text">
-                <ul style="list-style-type: none; padding: 10px;">
-                    <li><a href="https://accelerate-uma.agilixbuzz.com" target="_blank">Accelerate</a></li>
-                    <li><a href="https://xtramath.org/#/signin/student_other" target="_blank">XtraMath</a></li>
-                    <li><a href="https://zoo.sandiegozoo.org/live-cams" target="_blank">Live Zoo Cams</a></li>
-            </ul>
-            </p>
-        </div> 
+        <div style="text-align: center;">
+            <div class="row" style="justify-content: center;">
+                <button class="btn btn-primary btn-lg col-3" onclick="myFunction1()" id="students">Student</button>
+                <p class="col-2"></p>
+                <button class="btn btn-primary btn-lg col-3" onclick="myFunction2()" id="learningcoaches">Learning Coach</button>
+            </div>
+        </div>
+
+        <section class="students" style="justify-content: center;">
+            <h2 class="col" id="studentheader" style=" display: none;">Student Resources</h2>
+
+            <div class="row"> 
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="window.open('https://zoo.sandiegozoo.org/live-cams')">
+                        Live Zoo Cams
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="window.open('https://xtramath.org',)">
+                        Xtra Math
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="window.open('https://getepic.com')">
+                        Epic
+                    </button>
+                </div>
+
+            </div>
+
+    <br>
+    <br>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="location.href='deckofcards.html'">
+                        Compare Cards
+                    </button>
+                </div>
+            
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="location.href='dictionary.html'">
+                        Dictionary
+                    </button>
+                </div>
+            
+                <div class="col">
+                    <button class="btn-secondary btn-lg studentbutton" style="width: 200px; display:none;" onclick="window.open('https://accelerate-uma.agilixbuzz.com')">
+                        Accelerate
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="learningcoaches">
+            <h2 class="col" id="learningcoachheader" style=" display: none;">Learning Coach Resources</h2>
+
+            <div class="row"> 
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="window.open('https://uplift-mi.org')">
+                    Uplift Homepage
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="window.open('https://cdn-60272584c1ac181248108b32.closte.com/wp-content/uploads/2020/10/2021SY-UMOS_Family-Handbook_DRAFT-08.27.2020.pdf')">
+                        Family Handbook
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="window.open('https://cdn-60272584c1ac181248108b32.closte.com/wp-content/uploads/2020/12/b2021SY_UMOS-Calendar_APPROVED-08-27-2020.pdf')">
+                        Academic Calendar
+                    </button>
+                </div>
+            </div>
+
+    <br>
+    <br>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="location.href='mailto:support@qcsph.com';">
+                        Email IT
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="window.open('https://www.readingrockets.org/article/reading-tips-parents-kindergartners')">
+                        Reading Tips for Kindergarten Parents
+                    </button>
+                </div>
+
+                <div class="col">
+                    <button class="btn-secondary btn-lg lcbutton" style="width: 200px; display:none;" onclick="window.open('https://www.readingrockets.org/article/reading-tips-parents-first-graders')">
+                        Reading Tips for First Grade Parents
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    Sara Moss
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-envelope"></i> sara.moss@uplift-mi.org 
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-phone"></i> 586-482-8056
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="card" style="text-align:center; border-color: white;">
-        <div class="card-body">
-           <h2 class="card-header bg-secondary text-white"><strong>Learning Coaches</strong></h2>
-            <p class="card-text">
-                <ul style="list-style-type: none; padding: 10px;">
-                    <li><a href="https://uplift-mi.org" target="_blank">Uplift Homepage</a></li>
-                    <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRBKygDetAsy6rvmQVfQtuID1U4r-7yC_g9lAz1eQE5ngBFqbZZvlFvPNMnHgbe3ElvdXpihYU7kfkb/pub?start=false&loop=false&delayms=3000" target="_blank">Weekly Updates</a>
-                        <br><em><strong>Reminder:</strong> You must be logged in with your student's Uplift email address to view the weekly updates.</em>
-                        </li>
-                    <li><strong>Contact Mrs. Moss </strong>
-                        <br><strong>Call or Text:</strong> 586-482-8056
-                        <br><strong>Email Address: </strong><a href="mailto:sara.moss@uplift-mi.org">sara.moss@uplift-mi.org</a></li>
-                </ul>
-            </p>
-        </div> 
-    </div>
-
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/64e64e6213.js" crossorigin="anonymous"></script>
+
+
+<script>
+
+$(document).ready(function() {
+    $("#students").click(function () {
+        $(".students").show();
+    });
+});
+
+
+$(document).ready(function() {
+    $("#students").click(function () {
+        $(".learningcoaches").hide();
+    });
+});
+
+ $(document).ready(function() {
+    $("#learningcoaches").click(function () {
+        $(".students").hide();
+    });
+});
+
+$(document).ready(function() {
+    $("#learningcoaches").click(function () {
+        $(".learningcoaches").show();
+    });
+});
+
+$(document).ready(function() {
+    $("#students").click(function () {
+        $("#studentheader").show();
+    });
+});
+
+$(document).ready(function() {
+    $("#students").click(function () {
+        $(".studentbutton").show();
+    });
+});
+
+$(document).ready(function() {
+    $("#learningcoaches").click(function () {
+        $("#learningcoachheader").show();
+    });
+});
+
+$(document).ready(function() {
+    $("#learningcoaches").click(function () {
+        $(".lcbutton").show();
+    });
+});
+
+
+
+</script>
 
 </body>
-
-</html>
+</html> 
