@@ -3,5 +3,16 @@
 </div>
 
 
+$(document).ready(function(){
+    $("#submit").click(function(){
+        $(".form-group").reset();
+    });
+});
 
+
+$(document).ready(function(){
+    $("form").submit(function(){
+        event.preventDefault();
+        var webform = $.post("https://maker.ifttt.com/trigger/webform/with/key/bsfYNb4kChFc1IqDVxl1TM", JSON.stringify({"value1":$("#name").val, "value2":$("#email").val(), "value3":$("#message").val()}));
+ 
 

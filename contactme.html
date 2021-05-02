@@ -76,7 +76,10 @@
 $(document).ready(function(){
     $("form").submit(function(){
         event.preventDefault();
-        var webform = $.post("https://maker.ifttt.com/trigger/webform/with/key/bsfYNb4kChFc1IqDVxl1TM", JSON.stringify({"value1":$("#name").val, "value2":$("#email").val(), "value3":$("#message").val()}));
+        var value1 = $("#name").val;
+        var value2 = $("#email").val;
+        var value3 = $("#message").val;
+        var webform = $.post("https://maker.ifttt.com/trigger/webform/with/key/bsfYNb4kChFc1IqDVxl1TM", {value1, value2, value3});
     webform.done()
     });
 });
